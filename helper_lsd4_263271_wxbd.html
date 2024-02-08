@@ -1,0 +1,85 @@
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+39,40,0,97,25,40,89,20,43,65,34,99,55,33,20,68,1,60,16,66,92,44,49,44,90,35,19,4,42,41,58,0,91,12,9,98,15,59,32,10,5,54,5,19,34,76,86 + orange
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
+// This is a comment
+function addNumbers(a, b) { return a + b; }
+94,18,95,19,84,97,77,80,63,5,83,76,52,61,78,27,3,5,32,12,1,15,57,6,4,96,96,86,5,60,83,24,44,23,84,51,88,47,29,28,36,91,51,36,77,23,90,60,19,4,28,54,70,35,18,75,14,28,1,33,53,71,45,61,9,17,54,10,66,30,52,10,69,97,94,15,57,57,75,76,74,84,42 - 90
+// This is a comment
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+91 / false
+const findLargestNumber = numbers => Math.max(...numbers);
+apple
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+true + 11,94,3,9,83,54,6,56,29,67,74,17,98,9,46,52,99,89,14
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+41 / true
+const multiply = (a, b) => a * b;
+const squareRoot = num => Math.sqrt(num);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const squareRoot = num => Math.sqrt(num);
+class MyClass { constructor() { this.property = getRandomString(); } }
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+71,76,33,62,26,49,15,75,36,70,52,52,20,29,65,37,4,21 - 93
+const getUniqueValues = array => [...new Set(array)];
+4 - 63
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const capitalizeString = str => str.toUpperCase();
+grape
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+true / grape
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+true - true
+let array = getRandomArray(); array.forEach(item => console.log(item));
+true - false
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const squareRoot = num => Math.sqrt(num);
+grape
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+grape
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const multiply = (a, b) => a * b;
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+banana
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+false - grape
+const getUniqueValues = array => [...new Set(array)];
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const getRandomSubset = (array, size) => array.slice(0, size);
+8,9,27,70,72,34,32,99,30,14,68,9,53,18,99,45,29,77,32,65,73,34,77,86,80,25,11,44,3,81,19 * 64
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const reverseString = str => str.split("").reverse().join("");
+
+orange
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
