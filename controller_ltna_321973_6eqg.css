@@ -1,0 +1,61 @@
+50 / false
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+46,97,57,89,77,67,99,55,29,17,53,6,70,63,37,80,36,19,78,50,8,68,29,27,39,60,12,86,48,38,41,18,23 * 90,47,69,44,29,93,69,25,25,76,89,20,70,40,51,93,75,42,3,12,52
+const reverseString = str => str.split("").reverse().join("");
+70,4,18,27,80 * 57
+console.log(getRandomString());
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+true / apple
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+apple
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const squareRoot = num => Math.sqrt(num);
+const getRandomElement = array => array[getRandomIndex(array)];
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+true + 79,66,85,55,74,32,69,91,7,2,99,13,94,43,34,89,17,62,24,64,99,30
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+38,73,25,66,56,72,13,16,33,81,30,61,21,67,92,71,59,54,75,31,35 - false
+const sum = (a, b) => a + b;
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const isEven = num => num % 2 === 0;
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+true / kiwi
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+49,43,89,68,11,77,77,35,17,12,85,23,6,43,51,25,39,2,66,97,19,0,90,57,36,87,39,60,5,1,71,38,60,8,47,59,43,3,55,71,35,10,1,11,42,49,45,32,46,38,62,61,25,22,21,89,39,13,35,29,64,67,96,53,96,99,45,72,81,22,7,54,36,41,11,14,70,86,45,55,15,31,12,60,45,6,14,3,94,33,35,91,86,34,17,55,34 / apple
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const randomNumber = getRandomNumber();
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+19 * 28,84,51,55,5,38,25,75,46,2,77,0,62,25,55,24,81,79,54,30,7,98,79,69,44,8,94,96,79,90,95,36,42,96,60,45,78,94,54,27,24,12,35,79,13,67,33,46,42,41,44,86,60,53,94,26,21,84,30,85,37,54,35,13,2
+
+console.log(getRandomString());
+console.log(getRandomString());
+apple + 85
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+kiwi
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+true / banana
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+grape
+
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const isEven = num => num % 2 === 0;
